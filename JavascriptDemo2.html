@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+
+
+    <div id="d3"></div>
+    <div id="d4"></div>
+ 
+    <script>
+        //array in javascript
+        var names = ["Rajani", "Supriya", "Shweta", "Laxmi"];
+        //for (var i = 0; i < names.length; i++)
+        //{
+        //   console.log(names[i]);
+        //}
+
+        names.push("Sara");  //add in last
+        names.unshift("Viva");  // add in first
+
+        //remove the last element
+        names.pop();
+        //remove the first element
+        names.shift();
+
+        // splice
+        names.splice(1, 0, "Ankita", "kiran");
+        // slice
+        //var list = names.slice(2);
+        var list = names.slice(1, 5);
+        names.sort();
+        names.reverse();
+
+
+        document.getElementById("d1").innerHTML = names;
+        document.getElementById("d2").innerHTML = list;
+
+        //////////////////////////////////////////////////////////
+        //javascript Demo for-numbers
+        var nums = [56, 34, 12, 89, 59];
+        nums.push(45);
+        nums.unshift(1);
+
+        nums.pop();
+        nums.shift();
+
+        nums.splice(2, 0, 100, 500, 200);
+        var l1 = nums.slice(3);
+        //var l1 = num.slice(2, 4);
+        nums.sort();
+        nums.reverse();
+
+        document.getElementById("d3").innerHTML = nums;
+        document.getElementById("d4").innerHTML = l1;
+       
+
+
+    </script>
+</body>
+</html>

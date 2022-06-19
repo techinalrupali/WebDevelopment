@@ -1,0 +1,41 @@
+﻿.div1 {
+    margin: 40px 20px 30px 40px;
+    border: 10px solid red;
+    padding: 10px 20px 30px 40px;
+    box-shadow: 10px 10px 13px blue;
+    text-align: justify;
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-size: 13px;
+    font-style: oblique;
+    font-weight: 700;
+    font-family: Arial;
+}
+nav {
+    background: #F4F6F6;
+    height: 59px;
+}
+
+ul {
+    display: inline-flex;
+    list-style: none;
+    float: right;
+}
+
+    ul li {
+        padding-right: 25px;
+    }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+
+.banner{
+    background-image: url('banner.jpg');
+    height: 263px;
+    width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
