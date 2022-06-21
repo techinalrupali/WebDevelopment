@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        //global Scope
+        var a = 100;
+        var b = 20;
+        {
+            let a = 10; //a is now block scope
+            var c = 500; //c is a global scope
+            console.log(a);
+        }
+
+        //let a = 400;
+        console.log(a);
+
+        function test() {
+            var name = "Pune";//Function scope
+            let d = 200; //function scope
+            console.log(name);
+            console.log(d);
+        }
+    </script>
+
+</body>
+</html>

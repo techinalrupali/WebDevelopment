@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <script>
+        //call back function in javascript 
+        //when you will receive data/response from the server, till you have to wait
+        //1.setTimeOut() 2.setInterval()
+
+        function display() {
+            document.getElementById("d1").innerHTML = "Hello to all";
+
+        }
+        //display();
+        setTimeout(display, 3000);//3000ms->3sec
+
+        function showTime() {
+            let d = new Date();
+            data = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+            document.getElementById("d2").innerHTML = data;
+        }
+        //showTime();
+        setInterval(showTime,1000)
+    </script>
+
+</body>
+</html>
